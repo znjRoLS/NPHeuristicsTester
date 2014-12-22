@@ -12,9 +12,8 @@ class TravelingSalesmanSolver
     public:
         TravelingSalesmanSolver(string);
         virtual ~TravelingSalesmanSolver();
-        virtual bool init (Matrix) = 0;
 
-        virtual void solve(float) = 0;
+        virtual pair<int*,int> solve(Matrix* mat, double limit) = 0;
 
         friend ostream& operator<<(ostream&  out, TravelingSalesmanSolver* t)
         {

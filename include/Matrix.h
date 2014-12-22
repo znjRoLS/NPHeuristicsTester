@@ -4,13 +4,16 @@
 
 class Matrix
 {
-        float *mat;
+        double *mat;
         int sizeX, sizeY;
     public:
+        Matrix(int);
         Matrix(int, int);
-        ~Matrix();
-        float getVal(int , int) const;
-        void setVal(int, int, float);
+        virtual ~Matrix();
+        double getVal(int , int) const;
+        void setVal(int, int, double);
+        int getSizeX(){ return sizeX;};
+        int getSizeY(){ return sizeY;};
 };
 
 #endif // MATRIX_H

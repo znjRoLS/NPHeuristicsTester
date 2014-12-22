@@ -7,14 +7,16 @@
 
 class Tester
 {
-        TestGenerator * testGenerator;
-        TravelingSalesmanSolver * travelingSalesmanSolver;
+    double target;
+    int problemSize;
 
     public:
-        Tester(TestGenerator*, TravelingSalesmanSolver*);
+        Tester();
         virtual ~Tester();
 
-        ostream& test(ostream&, float);
+        void test(ostream&, TestGenerator*, TravelingSalesmanSolver*);
+        void setTarget(double);
+        void setSize(int);
 };
 
 #endif // TESTER_H

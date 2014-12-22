@@ -12,7 +12,7 @@ class TestGenerator
     public:
         TestGenerator(string);
         virtual ~TestGenerator();
-        virtual Matrix* generateTest() = 0;
+        virtual Matrix* generateTest(int) = 0;
         friend ostream& operator<<(ostream&  out, TestGenerator*t)
         {
             return out << t->name;

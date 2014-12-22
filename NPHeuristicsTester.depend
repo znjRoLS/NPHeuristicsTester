@@ -1,29 +1,55 @@
 # depslib dependency file v1.0
-1419122399 source:/mnt/LASLO/Dropbox/workspace/CodeBlocks_uhu/NPHeuristicsTester/main.cpp
+1419259136 source:/mnt/LASLO/Dropbox/workspace/CodeBlocks_uhu/NPHeuristicsTester/main.cpp
 	<iostream>
 	"Tester.h"
+	"BruteForce.h"
+	"RandomSquareGenerator.h"
 
-1419122002 source:/mnt/LASLO/Dropbox/workspace/CodeBlocks_uhu/NPHeuristicsTester/src/Matrix.cpp
+1419254663 source:/mnt/LASLO/Dropbox/workspace/CodeBlocks_uhu/NPHeuristicsTester/src/Matrix.cpp
 	"Matrix.h"
 
-1419121982 /mnt/LASLO/Dropbox/workspace/CodeBlocks_uhu/NPHeuristicsTester/include/Matrix.h
+1419254648 /mnt/LASLO/Dropbox/workspace/CodeBlocks_uhu/NPHeuristicsTester/include/Matrix.h
 
 1419123476 source:/mnt/LASLO/Dropbox/workspace/CodeBlocks_uhu/NPHeuristicsTester/src/TestGenerator.cpp
 	"TestGenerator.h"
 
-1419123460 /mnt/LASLO/Dropbox/workspace/CodeBlocks_uhu/NPHeuristicsTester/include/TestGenerator.h
+1419255890 /mnt/LASLO/Dropbox/workspace/CodeBlocks_uhu/NPHeuristicsTester/include/TestGenerator.h
 	<string>
 	"Matrix.h"
 
-1419123330 /mnt/LASLO/Dropbox/workspace/CodeBlocks_uhu/NPHeuristicsTester/include/Tester.h
+1419256649 /mnt/LASLO/Dropbox/workspace/CodeBlocks_uhu/NPHeuristicsTester/include/Tester.h
 	"TravelingSalesmanSolver.h"
 	"TestGenerator.h"
 
-1419123438 /mnt/LASLO/Dropbox/workspace/CodeBlocks_uhu/NPHeuristicsTester/include/TravelingSalesmanSolver.h
+1419253035 /mnt/LASLO/Dropbox/workspace/CodeBlocks_uhu/NPHeuristicsTester/include/TravelingSalesmanSolver.h
 	<string>
 	"Matrix.h"
 
-1419123405 source:/mnt/LASLO/Dropbox/workspace/CodeBlocks_uhu/NPHeuristicsTester/src/Tester.cpp
+1419258337 source:/mnt/LASLO/Dropbox/workspace/CodeBlocks_uhu/NPHeuristicsTester/src/Tester.cpp
 	"Tester.h"
 	<iostream>
+
+1419123488 source:/mnt/LASLO/Dropbox/workspace/CodeBlocks_uhu/NPHeuristicsTester/src/TravelingSalesmanSolver.cpp
+	"TravelingSalesmanSolver.h"
+
+1419259050 source:/mnt/LASLO/Dropbox/workspace/CodeBlocks_uhu/NPHeuristicsTester/src/BruteForce.cpp
+	"BruteForce.h"
+	<stdio.h>
+
+1419255420 /mnt/LASLO/Dropbox/workspace/CodeBlocks_uhu/NPHeuristicsTester/include/BruteForce.h
+	<TravelingSalesmanSolver.h>
+
+1419256746 source:/mnt/LASLO/Dropbox/workspace/CodeBlocks_uhu/NPHeuristicsTester/src/RandomGenerator.cpp
+	"RandomGenerator.h"
+	<math.h>
+
+1419255885 /mnt/LASLO/Dropbox/workspace/CodeBlocks_uhu/NPHeuristicsTester/include/RandomGenerator.h
+	<TestGenerator.h>
+
+1419257122 /mnt/LASLO/Dropbox/workspace/CodeBlocks_uhu/NPHeuristicsTester/include/RandomSquareGenerator.h
+	<TestGenerator.h>
+
+1419257121 source:/mnt/LASLO/Dropbox/workspace/CodeBlocks_uhu/NPHeuristicsTester/src/RandomSquareGenerator.cpp
+	"RandomSquareGenerator.h"
+	<math.h>
 

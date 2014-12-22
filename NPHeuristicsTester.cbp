@@ -13,6 +13,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
+					<Add directory="include" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
@@ -22,6 +23,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-O2" />
+					<Add directory="include" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -32,7 +34,19 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="include/BruteForce.h" />
+		<Unit filename="include/Matrix.h" />
+		<Unit filename="include/RandomSquareGenerator.h" />
+		<Unit filename="include/TestGenerator.h" />
+		<Unit filename="include/Tester.h" />
+		<Unit filename="include/TravelingSalesmanSolver.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="src/BruteForce.cpp" />
+		<Unit filename="src/Matrix.cpp" />
+		<Unit filename="src/RandomSquareGenerator.cpp" />
+		<Unit filename="src/TestGenerator.cpp" />
+		<Unit filename="src/Tester.cpp" />
+		<Unit filename="src/TravelingSalesmanSolver.cpp" />
 		<Extensions>
 			<code_completion />
 			<debugger />
