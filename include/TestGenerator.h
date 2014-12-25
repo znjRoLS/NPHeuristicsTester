@@ -8,11 +8,19 @@ using namespace std;
 class TestGenerator
 {
         string name;
+    protected:
+        Matrix *mat;
 
     public:
         TestGenerator(string);
         virtual ~TestGenerator();
-        virtual Matrix* generateTest(int) = 0;
+        virtual void generateTest(int) = 0;
+
+        Matrix * getTest()
+        {
+            return mat;
+        }
+
         friend ostream& operator<<(ostream&  out, TestGenerator*t)
         {
             return out << t->name;

@@ -18,6 +18,8 @@ BruteForce::~BruteForce()
 pair<int*,int> BruteForce::solve(Matrix*mat, double target)
 {
 
+    clock_t beginTime = clock();
+
     int matSize = mat->getSizeX();
 
     pair<int*,int> currSolution;
@@ -32,6 +34,13 @@ pair<int*,int> BruteForce::solve(Matrix*mat, double target)
 
     while (true)
     {
+        clock_t endTime = clock();
+
+        double elapsed_secs = double(endTime - beginTime) / CLOCKS_PER_SEC;
+
+        if (elapsed_secs > timeLimit)
+            break;
+
         //didnt find a solution, lets go out
         if (level == -1) break;
 
@@ -54,9 +63,13 @@ pair<int*,int> BruteForce::solve(Matrix*mat, double target)
         //return to up level
         if (lastLevel == matSize)
         {
-            used[ currSolution.first[level-1] ] = false;
-            lastLevel = currSolution.first[level - 1] + 1;
             level--;
+            if (level >= 0)
+            {
+                used[ currSolution.first[level] ] = false;
+                lastLevel = currSolution.first[level] + 1;
+            }
+
             if (level > 0)
                 currSolutionScore -= mat->getVal( currSolution.first[level - 1], currSolution.first[level] );
         }

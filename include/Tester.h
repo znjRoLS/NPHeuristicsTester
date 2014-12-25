@@ -8,7 +8,7 @@
 class Tester
 {
     double target;
-    int problemSize;
+    double timeLimit;
 
     public:
         Tester();
@@ -16,7 +16,6 @@ class Tester
 
         void test(ostream&, TestGenerator*, TravelingSalesmanSolver*);
         void setTarget(double);
-        void setSize(int);
 };
 
 #endif // TESTER_H

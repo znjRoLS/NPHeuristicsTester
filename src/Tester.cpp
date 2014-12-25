@@ -18,19 +18,21 @@ void Tester::setTarget(double target)
     this->target = target;
 }
 
-void Tester::setSize(int problemSize)
-{
-    this->problemSize = problemSize;
-}
 
 void Tester::test(ostream& out, TestGenerator* testGenerator, TravelingSalesmanSolver* travelingSalesmanSolver)
 {
 
     out << "Testing" <<endl << "Test Generator: " << testGenerator << endl << "Traveling Salesman Solver: " << travelingSalesmanSolver << endl;
 
-    out << "Generating test input... Matrix of weights: " << endl;
+    //out << "Generating test input..." <<endl;
 
-    Matrix *mat = testGenerator->generateTest(problemSize);
+    Matrix *mat = testGenerator->getTest();
+    /*
+    out << "Matrix of weights: " << endl;
+
+
+
+    int problemSize = mat->getSizeX();
 
     for (int i = 0; i < problemSize ; i++)
     {
@@ -40,7 +42,7 @@ void Tester::test(ostream& out, TestGenerator* testGenerator, TravelingSalesmanS
         }
         out << endl;
     }
-
+*/
     out << endl << "Letting solver to solve for less than target: " << target << endl;
 
     clock_t begin = clock();
@@ -50,14 +52,14 @@ void Tester::test(ostream& out, TestGenerator* testGenerator, TravelingSalesmanS
 
     if (solution.first == nullptr)
     {
-        out << "Didn't find any solution !" << endl;
+        out << "Didn't find any solution !" << endl <<endl << endl << endl;
     }
 
     else
     {
         out << "Found solution: ";
 
-        double solutionScore = mat->getVal( solution.first[ solution.second ], solution.first[0] );
+        double solutionScore = mat->getVal( solution.first[ solution.second -1 ], solution.first[0] );
         for (int i = 0; i < solution.second ; i++)
         {
             out << solution.first[i] << " ";
@@ -65,7 +67,7 @@ void Tester::test(ostream& out, TestGenerator* testGenerator, TravelingSalesmanS
                 solutionScore += mat->getVal( solution.first[i-1], solution.first[i] );
         }
 
-        out << endl << "Solution lenght: " << solutionScore << endl << "Time: " << elapsed_secs << endl;
+        out << endl << "Solution lenght: " << solutionScore << endl << "Time: " << elapsed_secs << endl <<endl << endl << endl;
     }
 
 

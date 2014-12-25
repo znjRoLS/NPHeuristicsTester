@@ -9,6 +9,9 @@ using namespace std;
 class TravelingSalesmanSolver
 {
         string name;
+    protected:
+        double timeLimit;
+
     public:
         TravelingSalesmanSolver(string);
         virtual ~TravelingSalesmanSolver();
@@ -18,6 +21,11 @@ class TravelingSalesmanSolver
         friend ostream& operator<<(ostream&  out, TravelingSalesmanSolver* t)
         {
             return out << t->name;
+        }
+
+        void setTimeLimit(double t)
+        {
+            timeLimit = t;
         }
 
 };

@@ -17,7 +17,7 @@ double dist (double x1, double y1, double x2, double y2)
     return sqrt( (x2-x1)*(x2-x1) + (y2-y1)*(y2-y1) );
 }
 
-Matrix* RandomSquareGenerator::generateTest(int n)
+void RandomSquareGenerator::generateTest(int n)
 {
     double *x = new double[n];
     double *y = new double[n];
@@ -33,11 +33,13 @@ Matrix* RandomSquareGenerator::generateTest(int n)
         y[i] = (double) rand() / RAND_MAX * scale;
     }
 
-    Matrix *mat = new Matrix(n);
+    mat = new Matrix(n);
+
+    mat->x = x;
+    mat->y = y;
 
     for (int i = 0; i < n; i++)
         for (int j = 0; j < n; j++)
             mat->setVal(i, j, dist(x[i],y[i],x[j],y[j]));
 
-    return mat;
 }

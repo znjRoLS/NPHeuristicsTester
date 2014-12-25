@@ -6,6 +6,7 @@ class Matrix
 {
         double *mat;
         int sizeX, sizeY;
+
     public:
         Matrix(int);
         Matrix(int, int);
@@ -14,6 +15,8 @@ class Matrix
         void setVal(int, int, double);
         int getSizeX(){ return sizeX;};
         int getSizeY(){ return sizeY;};
+
+        double *x,*y;
 };
 
 #endif // MATRIX_H

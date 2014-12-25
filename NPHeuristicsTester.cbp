@@ -36,17 +36,21 @@
 		</Compiler>
 		<Unit filename="include/BruteForce.h" />
 		<Unit filename="include/Matrix.h" />
+		<Unit filename="include/NearestNeighbour.h" />
 		<Unit filename="include/RandomSquareGenerator.h" />
 		<Unit filename="include/TestGenerator.h" />
 		<Unit filename="include/Tester.h" />
 		<Unit filename="include/TravelingSalesmanSolver.h" />
+		<Unit filename="include/TriOptimal.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/BruteForce.cpp" />
 		<Unit filename="src/Matrix.cpp" />
+		<Unit filename="src/NearestNeighbour.cpp" />
 		<Unit filename="src/RandomSquareGenerator.cpp" />
 		<Unit filename="src/TestGenerator.cpp" />
 		<Unit filename="src/Tester.cpp" />
 		<Unit filename="src/TravelingSalesmanSolver.cpp" />
+		<Unit filename="src/TriOptimal.cpp" />
 		<Extensions>
 			<code_completion />
 			<debugger />

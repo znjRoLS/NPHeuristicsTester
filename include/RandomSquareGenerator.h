@@ -6,10 +6,11 @@
 
 class RandomSquareGenerator : public TestGenerator
 {
+
     public:
         RandomSquareGenerator(string);
         ~RandomSquareGenerator();
-        Matrix* generateTest(int) override;
+        void generateTest(int) override;
 };
 
 #endif // RANDOMGENERATOR_H
