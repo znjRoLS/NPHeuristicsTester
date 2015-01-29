@@ -4,7 +4,7 @@
 
 using namespace std;
 
-BruteForce::BruteForce(string name) : TravelingSalesmanSolver(name)
+BruteForce::BruteForce() : TravelingSalesmanSolver("Brute force solver")
 {
 
 }

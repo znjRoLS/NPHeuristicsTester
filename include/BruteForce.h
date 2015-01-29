@@ -10,7 +10,7 @@ class BruteForce : public TravelingSalesmanSolver
 
 
     public:
-        BruteForce(string);
+        BruteForce();
         ~BruteForce();
 
         pair<int*,int> solve(Matrix *mat, double limit) override;

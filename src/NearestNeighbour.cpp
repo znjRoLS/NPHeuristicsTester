@@ -3,7 +3,7 @@
 
 using namespace std;
 
-NearestNeighbour::NearestNeighbour(string name) : TravelingSalesmanSolver(name)
+NearestNeighbour::NearestNeighbour() : TravelingSalesmanSolver("Nearest Neighbour")
 {
     //ctor
 }

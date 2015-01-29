@@ -3,7 +3,7 @@
 
 using namespace std;
 
-TriOptimal::TriOptimal(string name): TravelingSalesmanSolver(name)
+TriOptimal::TriOptimal(): TravelingSalesmanSolver("TriOptimal")
 {
     //ctor
 }

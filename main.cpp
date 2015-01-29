@@ -32,7 +32,7 @@ int main()
 
 
 
-    TravelingSalesmanSolver * t = new BruteForce("Brute force solver");
+    TravelingSalesmanSolver * t = new BruteForce();
 
     cout << "Set time limit for " << t << " to " << 5.0 <<endl;
     t->setTimeLimit(5.0);
@@ -42,7 +42,7 @@ int main()
 
 
 
-    t = new NearestNeighbour("Nearest Neighbour");
+    t = new NearestNeighbour();
 
     cout << "Set time limit for " << t << " to " << 10.0 <<endl;
     t->setTimeLimit(10.0);
@@ -50,7 +50,16 @@ int main()
     tester->test(cout, g, t);
 
 
-     t = new TriOptimal("TriOptimal");
+     t = new TriOptimal();
+
+    cout << "Set time limit for " << t << " to " << 5.0 <<endl;
+    t->setTimeLimit(5.0);
+
+    tester->test(cout, g, t);
+
+
+
+    t = new AntColony();
 
     cout << "Set time limit for " << t << " to " << 5.0 <<endl;
     t->setTimeLimit(5.0);

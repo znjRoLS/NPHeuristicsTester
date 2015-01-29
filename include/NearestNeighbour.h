@@ -7,7 +7,7 @@
 class NearestNeighbour : public TravelingSalesmanSolver
 {
     public:
-        NearestNeighbour(string);
+        NearestNeighbour();
         ~NearestNeighbour();
 
         pair<int*,int> solve(Matrix *mat, double limit) override;

@@ -10,7 +10,7 @@ class TriOptimal : public TravelingSalesmanSolver
     pair<int*,int> generateRandomPath(Matrix*);
 
     public:
-        TriOptimal(string);
+        TriOptimal();
         ~TriOptimal();
 
         pair<int*,int> solve(Matrix *mat, double limit) override;

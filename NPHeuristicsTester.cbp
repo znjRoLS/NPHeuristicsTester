@@ -34,6 +34,7 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="include/AntColony.h" />
 		<Unit filename="include/BruteForce.h" />
 		<Unit filename="include/Matrix.h" />
 		<Unit filename="include/NearestNeighbour.h" />
@@ -43,6 +44,7 @@
 		<Unit filename="include/TravelingSalesmanSolver.h" />
 		<Unit filename="include/TriOptimal.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="src/AntColony.cpp" />
 		<Unit filename="src/BruteForce.cpp" />
 		<Unit filename="src/Matrix.cpp" />
 		<Unit filename="src/NearestNeighbour.cpp" />
